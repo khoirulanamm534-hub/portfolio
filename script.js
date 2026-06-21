@@ -61,6 +61,6 @@ window.addEventListener("load", function () {
             loader.style.visibility = "hidden";
             loader.style.transition = "0.6s ease";
         }
-    }, 2000);
+    }, 3000);
 
 });
