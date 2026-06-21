@@ -1,67 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoirul Anam - Portofolio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- START SCREEN / LOADING -->
-<div id="start-screen">
-    <div class="start-content">
+    <!-- START SCREEN -->
+    <div id="start-screen">
+        <div class="start-content">
 
-        <!-- LOGO BERPUTAR -->
-        <div class="start-logo">
-            <i class="fas fa-laptop-code"></i>
+            <div class="start-logo">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <h1 id="start-text"></h1>
+
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+
+            <p>Loading...</p>
+
         </div>
-
-        <!-- TEXT KETIK -->
-        <h1 id="start-text"></h1>
-
-        <!-- LOADING BAR -->
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
-        </div>
-
-        <p>Loading...</p>
-
     </div>
-</div>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container">
+
             <div class="logo">
-                <i class="fas fa-laptop-code"></i> About Me
+                <i class="fas fa-laptop-code"></i> HI
             </div>
+
             <ul class="nav-link">
                 <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fas fa-user"></i> Tentang</a></li>
                 <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
             </ul>
+
         </div>
     </nav>
 
+    <!-- HERO -->
     <section id="home" class="hero">
         <div class="hero-content">
+
             <div class="profile-photo">
                 <img src="profile.jpg" alt="Khoirul Anam">
             </div>
 
             <div>
                 <h1 id="typing"></h1>
+
                 <p class="subtitle">
                     <i class="fas fa-graduation-cap"></i>
                     Seorang Siswa SMK
                 </p>
 
                 <p class="bio">
-                    Seorang pelajar yang tertarik dengan dunia percodingan dan networking
-                    dan Saya senang belajar teknologi yang bersifat kreatif.
+                    Seorang pelajar yang tertarik dengan dunia percodingan dan networking.
+                    Saya senang belajar teknologi yang bersifat kreatif.
                 </p>
 
                 <a href="#contact" class="cta-btn">
@@ -69,25 +75,28 @@
                     Hubungi Saya
                 </a>
             </div>
+
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="about">
+
         <div class="container">
+
             <h2>
                 <i class="fas fa-user-circle"></i>
                 Tentang Saya
             </h2>
 
-        <div class="about-content">
+            <div class="about-content">
+
                 <div class="about-card">
-    <h3><i class="fas fa-image"></i> </h3>
-
-    <div class="about-photo">
-        <img src="foto2.jpg" alt="Foto Kedua">
-    </div>
-</div>
-
+                    <h3><i class="fas fa-image"></i></h3>
+                    <div class="about-photo">
+                        <img src="foto2.jpg" alt="Foto Kedua">
+                    </div>
+                </div>
 
                 <div class="about-card">
                     <h3><i class="fas fa-id-card"></i> Identitas</h3>
@@ -102,22 +111,23 @@
                     <h3><i class="fas fa-fire"></i> Minat & Passion</h3>
 
                     <p>
-                        Saya adalah seorang pelajar SMK yang tertarik dengan dunia
-                        percodingan dan networking. Saya senang belajar teknologi baru
-                        dan menerapkannya dalam proyek-proyek kecil sambil mendalami
-                        ilmu jaringan komputer.
+                        Saya tertarik dengan dunia percodingan dan networking.
+                        Saya senang belajar teknologi baru dan membuat project kecil.
                     </p>
 
-                    <p style="margin-top: 1rem;">
-                        <strong>Fokus Pembelajaran:</strong>
-                        Web Development, Network Administration,
-                        Server Management
+                    <p>
+                        <strong>Fokus:</strong> Web Development, Networking, Server Management
                     </p>
                 </div>
+
+            </div>
+
         </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="skills">
+
         <div class="container">
 
             <h2>
@@ -128,58 +138,49 @@
             <div class="skills-grid">
 
                 <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
                     <h3>HTML & CSS</h3>
                     <p>Markup & Styling Web</p>
                 </div>
 
                 <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-js-square"></i>
-                    </div>
+                    <div class="skill-icon"><i class="fas fa-js-square"></i></div>
                     <h3>JavaScript</h3>
                     <p>Frontend Development</p>
                 </div>
 
                 <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
+                    <div class="skill-icon"><i class="fas fa-wifi"></i></div>
                     <h3>Mikrotik</h3>
                     <p>Instalasi & Maintenance</p>
                 </div>
 
                 <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fab fa-linux"></i>
-                    </div>
+                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
                     <h3>Linux Redhat</h3>
                     <p>Server Administration</p>
                 </div>
 
                 <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Networking</h3>
                     <p>Jaringan Komputer</p>
                 </div>
 
                 <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
                     <h3>Troubleshooting</h3>
                     <p>Problem Solving</p>
                 </div>
 
             </div>
+
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="contact">
+
         <div class="container">
 
             <h2>
@@ -193,38 +194,28 @@
 
             <div class="contact-link">
 
-                <a href="https://wa.me/6285142273877"
-                   class="contact-btn whatsapp"
-                   target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Whatsapp</span>
+                <a href="https://wa.me/6285142273877" class="contact-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Whatsapp
                 </a>
 
-                <a href="https://instagram.com/iynnggg_"
-                   class="contact-btn instagram"
-                   target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
+                <a href="https://instagram.com/iynnggg_" class="contact-btn instagram" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
                 </a>
 
-                <a href="https://tiktok.com/@iyyngg_"
-                   class="contact-btn tiktok"
-                   target="_blank">
-                    <i class="fab fa-tiktok"></i>
-                    <span>TikTok</span>
+                <a href="https://tiktok.com/@iyyngg_" class="contact-btn tiktok" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
                 </a>
 
-                <a href="https://github.com/khoirulanamm534-hub"
-                   class="contact-btn email"
-                   target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>Github</span>
+                <a href="https://github.com/khoirulanamm534-hub" class="contact-btn email" target="_blank">
+                    <i class="fab fa-github"></i> Github
                 </a>
 
             </div>
+
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <p>
@@ -235,5 +226,6 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
