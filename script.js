@@ -1,32 +1,66 @@
-const text = "Khoirul Anam";
-let i = 0;
-let isDeleting = false;
-const speed = 120;
+window.addEventListener("load", function () {
 
-function typeWriter() {
-    const target = document.getElementById("typing");
+    // ================= TYPE WRITER HOME =================
+    const nameText = "Khoirul Anam";
+    let i = 0;
+    let isDeleting = false;
+    const speed = 120;
 
-    if (!target) return;
+    function typeWriter() {
+        const target = document.getElementById("typing");
+        if (!target) return;
 
-    if (!isDeleting) {
-        target.innerHTML = text.substring(0, i + 1);
-        i++;
+        if (!isDeleting) {
+            target.innerHTML = nameText.substring(0, i + 1);
+            i++;
 
-        if (i === text.length) {
-            isDeleting = true;
-            setTimeout(typeWriter, 1200);
-            return;
+            if (i === nameText.length) {
+                isDeleting = true;
+                setTimeout(typeWriter, 1200);
+                return;
+            }
+        } else {
+            target.innerHTML = nameText.substring(0, i);
+            i--;
+
+            if (i === 0) {
+                isDeleting = false;
+            }
         }
-    } else {
-        target.innerHTML = text.substring(0, i);
-        i--;
 
-        if (i === 0) {
-            isDeleting = false;
+        setTimeout(typeWriter, isDeleting ? 60 : speed);
+    }
+
+    typeWriter();
+
+
+    // ================= START SCREEN TEXT =================
+    const startText = "SELAMAT DATANG DI PORTOFOLIO SAYA";
+    let j = 0;
+
+    function typeStart() {
+        const target = document.getElementById("start-text");
+        if (!target) return;
+
+        if (j < startText.length) {
+            target.innerHTML += startText.charAt(j);
+            j++;
+            setTimeout(typeStart, 80);
         }
     }
 
-    setTimeout(typeWriter, isDeleting ? 60 : speed);
-}
+    typeStart();
 
-window.addEventListener("load", typeWriter);
+
+    // ================= LOADER HIDE =================
+    setTimeout(() => {
+        const loader = document.getElementById("start-screen");
+
+        if (loader) {
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
+            loader.style.transition = "0.6s ease";
+        }
+    }, 2000);
+
+});
